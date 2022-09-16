@@ -140,6 +140,5 @@ print(formatted_regression_output)
 context.updateVariable('regression_results', formatted_regression_output)
 
 #delete source yaml file - we don't want this sitting on the server indefinitely
-#because it stores the redshift credentials in there. This method was  approved by
-#Leio Heyenrath on 12/13/2019 via Slack.
+#because it stores the redshift credentials in there. 
 os.remove(root + '/home/dbt/profiles.yml')
