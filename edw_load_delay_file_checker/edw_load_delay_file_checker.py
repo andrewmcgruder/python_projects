@@ -24,7 +24,7 @@ if(val == 0):
   sns = boto3.client('sns')
   # Publish a simple message to the specified SNS topic
   response = sns.publish(
-      TopicArn='arn:aws:sns:us-west-2:aws_account_number:topic_name', #replace this with your account number and an SNS topic to send SMS messages to in case of failure.  
+      TopicArn='arn:aws:sns:aws_region:aws_account_number:topic_name', #replace this with your account number and an SNS topic to send SMS messages to in case of failure.  
       Message='Warning: The EDW load appears to be delayed. Please investigate.',   
   )
 else:
